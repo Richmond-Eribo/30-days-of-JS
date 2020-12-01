@@ -4,7 +4,7 @@ let nums   = [1,2,3,4,5]
 //call back function
 const multiply = num => num * 2;
 // checks if a number in the array is odd, then multiplies the odd numbers
-const oddNum = nums.filter(num => num % 2 == 1).map(multiply)
+const oddNum = nums.filter(num => num % 2 !== 0).map(multiply)
 console.log(oddNum)
 
 //Use .reduce() to take a multi-layered array and return a single layer array from scratch.
